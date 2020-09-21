@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="ans">
+<h1>MyweatherApp says that the weather at {{ location }} is {{ weather }}.<br> Now the temperature there is
+    {{ temperature }} </h1>
+<h4> the minimum temperature is {{ min_temp }}&deg; Celsius.<br> The maximum temperature is {{ max_temp }}&deg; Celsius. <br> The atmosphric
+    pessure is {{ pressure }} kpa. <br>The humidity is {{ humidity }}. <br>The visibility is {{ visibility }}. <br>The
+    wind is moving at {{ wind_speed }}mph with degree {{ wind_degree }}&deg; . <br>the sky is {{ clouds }} percent cloudy.
+    <br>Physically it feels like {{ feels_like }}&deg; Celsius</h4>
+</div>
+{% endblock %}
